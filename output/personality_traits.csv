@@ -1,19 +1,19 @@
-job1,job2,total
-2539,9067,11606
-795,955,1750
-4519,12492,17011
-188,623,811
-0,0,0
-383,2474,2857
-0,0,0
-787,2708,3495
-3,113,116
-3,2,5
-0,2,2
-1,2,3
-3,7,10
-28,117,145
-191,837,1028
-246,768,1014
-158,509,667
-42,108,150
+,job1,job2,total
+analytical,2539,9067,11606
+logical,795,955,1750
+technical,4519,12492,17011
+strong communication,188,623,811
+creativity skills,0,0,0
+mathematical,383,2474,2857
+business savy,0,0,0
+rational,787,2708,3495
+artisan,3,113,116
+guardian,3,2,5
+idealist,0,2,2
+risk-averse,1,2,3
+skeptical,3,7,10
+pragmatic,28,117,145
+curiosity,191,837,1028
+creativity,246,768,1014
+critical thinking,158,509,667
+intuition,42,108,150

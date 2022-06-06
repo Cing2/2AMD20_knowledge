@@ -22,7 +22,7 @@ all_seeked_traits = list_seeked_traits + list_seeked_traits_soft
 list_soft_skills_1 = ['communication', 'curiosity', 'business acumen', 'storytelling',
                       'adaptability', 'critical thinking', 'product understanding',
                       'team player']
-list_soft_skills_2 = ['verbal and written communication skills', 'work ethic',
+list_soft_skills_2 = ['verbal and written communication skills', 'communication skills', 'work ethic',
                       'adaptability', 'critical thinking', 'business acumen',
                       'collaboration']
 list_soft_skills_3 = ['business knowledge', 'problem-solving', 'curiosity', 'critical thinking', 'communication',
@@ -35,3 +35,7 @@ list_hard_skills_1 = ['statistics', 'calculus', 'linear algebra',
                       'deep learning', 'data wrangling', 'data preparation',
                       'model deployment', 'model production', 'data visualization']
 # conversions: 'multivariable calculus' -> 'calculus'
+
+
+all_traits_skills = all_personality_traits + all_seeked_traits + all_soft_skills + list_hard_skills_1
+all_traits_skills = list(set(all_traits_skills))

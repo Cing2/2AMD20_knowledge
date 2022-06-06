@@ -1,14 +1,14 @@
-job1,job2,total
-1988,10707,12695
-28,231,259
-66,191,257
-1577,6683,8260
-451,1413,1864
-268,2301,2569
-3195,20158,23353
-436,3414,3850
-70,333,403
-48,200,248
-18,113,131
-3,10,13
-713,3268,3981
+,job1,job2,total
+statistics,1988,10707,12695
+calculus,28,231,259
+linear algebra,66,191,257
+programming,1577,6683,8260
+coding,451,1413,1864
+predictive modeling,268,2301,2569
+machine learning,3195,20158,23353
+deep learning,436,3414,3850
+data wrangling,70,333,403
+data preparation,48,200,248
+model deployment,18,113,131
+model production,3,10,13
+data visualization,713,3268,3981
