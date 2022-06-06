@@ -1,0 +1,13 @@
+/* changes the text color of input box */
+.Select-value-label {
+    color: white !important;
+}
+
+/* dropdown menu options */
+.VirtualizedSelectOption {
+    background-color: #2b7c85;
+ }
+
+.rc-slider-mark-text {
+    color: #ffffff;
+}
