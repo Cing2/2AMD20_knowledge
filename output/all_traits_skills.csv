@@ -1,52 +1,52 @@
 ,job1,job2,total
-predictive modeling,268,2301,2569
-product understanding,5,3,8
-model production,3,10,13
-risk-averse,1,2,3
-adaptability,32,80,112
-business acumen,142,407,549
 machine learning,3195,20158,23353
-software skills,26,17,43
-communication,2443,6616,9059
-rational,787,2708,3495
-presentation skills,185,670,855
-mentoring,195,587,782
-cooperation,27,56,83
-linear algebra,66,191,257
-verbal and written communication skills,199,432,631
-curiosity,191,837,1028
-critical thinking,158,509,667
-analytical,2539,9067,11606
-strong communication,188,623,811
-pragmatic,28,117,145
-storytelling,54,168,222
-operational skills,1,2,3
-artisan,3,113,116
-work ethic,67,99,166
-data preparation,48,200,248
 technical,4519,12492,17011
-business savy,0,0,0
-model deployment,18,113,131
-intuition,42,108,150
-guardian,3,2,5
-creativity skills,0,0,0
-business knowledge,28,155,183
+management,4143,10062,14205
+statistics,1988,10707,12695
+analytical,2539,9067,11606
+communication,2443,6616,9059
+programming,1577,6683,8260
+communication skills,1309,3501,4810
+data visualization,713,3268,3981
+deep learning,436,3414,3850
+rational,787,2708,3495
+mathematical,383,2474,2857
+predictive modeling,268,2301,2569
+collaboration,655,1692,2347
+coding,451,1413,1864
+logical,795,955,1750
+problem-solving,446,1005,1451
+curiosity,191,837,1028
+creativity,246,768,1014
+presentation skills,185,670,855
+strong communication,188,623,811
+mentoring,195,587,782
+team player,237,471,708
+risk management,149,530,679
+critical thinking,158,509,667
+verbal and written communication skills,199,432,631
+business acumen,142,407,549
 data wrangling,70,333,403
 time management,157,231,388
-management,4143,10062,14205
-programming,1577,6683,8260
-problem-solving,446,1005,1451
-collaboration,655,1692,2347
-mathematical,383,2474,2857
-data visualization,713,3268,3981
-skeptical,3,7,10
-team player,237,471,708
-creativity,246,768,1014
-idealist,0,2,2
-coding,451,1413,1864
-communication skills,1309,3501,4810
-statistics,1988,10707,12695
-deep learning,436,3414,3850
-risk management,149,530,679
-logical,795,955,1750
 calculus,28,231,259
+linear algebra,66,191,257
+data preparation,48,200,248
+storytelling,54,168,222
+business knowledge,28,155,183
+work ethic,67,99,166
+intuition,42,108,150
+pragmatic,28,117,145
+model deployment,18,113,131
+artisan,3,113,116
+adaptability,32,80,112
+cooperation,27,56,83
+software skills,26,17,43
+model production,3,10,13
+skeptical,3,7,10
+product understanding,5,3,8
+guardian,3,2,5
+operational skills,1,2,3
+risk-averse,1,2,3
+idealist,0,2,2
+business savy,0,0,0
+creativity skills,0,0,0
