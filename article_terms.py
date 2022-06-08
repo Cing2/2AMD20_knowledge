@@ -1,7 +1,8 @@
 ### Different lists per personality source
 list_personality_traits_1 = ['analytical', 'logical', 'technical', 'strong communication',
-                             'creativity skills', 'mathematical', 'business savy']
-# conversion: 'mathematically agile' -> 'mathematical'
+                             'creative', 'mathematical', 'business savy']
+# conversion: 'mathematically agile' -> 'mathematical', 'creativity skills' -> creative
+
 list_personality_traits_2 = ['rational', 'artisan', 'guardian', 'idealist']
 list_personality_traits_3 = ['risk-averse', 'skeptical', 'pragmatic']  # 'matter-of-fact', ]  # I think useless junk
 list_personality_traits_4 = ['Curiosity', 'Creativity', 'Critical Thinking',
