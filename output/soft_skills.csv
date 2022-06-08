@@ -1,15 +1,15 @@
-,job1,job2,total
-communication,2443,6616,9059
-communication skills,1309,3501,4810
-collaboration,655,1692,2347
-problem-solving,446,1005,1451
-curiosity,191,837,1028
-team player,237,471,708
-critical thinking,158,509,667
-verbal and written communication skills,199,432,631
-business acumen,142,407,549
-storytelling,54,168,222
-business knowledge,28,155,183
-work ethic,67,99,166
-adaptability,32,80,112
-product understanding,5,3,8
+,job1,job2,total,relative_occurrence_job
+communication,2443.0,6616.0,9059.0,0.651304910489611
+communication skills,1309.0,3501.0,4810.0,0.34581925372061256
+collaboration,655.0,1692.0,2347.0,0.1687396649651305
+problem-solving,446.0,1005.0,1451.0,0.10432094327413904
+curiosity,191.0,837.0,1028.0,0.07390897979725358
+team player,237.0,471.0,708.0,0.05090229347904235
+critical thinking,158.0,509.0,667.0,0.04795456179452153
+verbal and written communication skills,199.0,432.0,631.0,0.04536630958372277
+business acumen,142.0,407.0,549.0,0.039470846214681145
+storytelling,54.0,168.0,222.0,0.015960888633259042
+business knowledge,28.0,155.0,183.0,0.013156948738227047
+work ethic,67.0,99.0,166.0,0.011934718527572075
+adaptability,32.0,80.0,112.0,0.00805234021137393
+product understanding,5.0,3.0,8.0,0.0005751671579552807

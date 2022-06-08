@@ -1,12 +1,12 @@
-,job1,job2,total
-management,4143,10062,14205
-communication,2443,6616,9059
-presentation skills,185,670,855
-mentoring,195,587,782
-team player,237,471,708
-risk management,149,530,679
-critical thinking,158,509,667
-time management,157,231,388
-cooperation,27,56,83
-software skills,26,17,43
-operational skills,1,2,3
+,job1,job2,total,relative_occurrence_job
+management,4143.0,10062.0,14205.0,1.0212811848443455
+communication,2443.0,6616.0,9059.0,0.651304910489611
+presentation skills,185.0,670.0,855.0,0.06147099000647063
+mentoring,195.0,587.0,782.0,0.056222589690128694
+team player,237.0,471.0,708.0,0.05090229347904235
+risk management,149.0,530.0,679.0,0.04881731253145445
+critical thinking,158.0,509.0,667.0,0.04795456179452153
+time management,157.0,231.0,388.0,0.027895607160831115
+cooperation,27.0,56.0,83.0,0.0059673592637860375
+software skills,26.0,17.0,43.0,0.003091523474009634
+operational skills,1.0,2.0,3.0,0.0002156876842332303
