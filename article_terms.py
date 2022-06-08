@@ -1,6 +1,6 @@
 ### Different lists per personality source
 list_personality_traits_1 = ['analytical', 'logical', 'technical', 'strong communication',
-                             'creative', 'mathematical', 'business savy']
+                             'creative', 'mathematical', 'agile', 'business savy']
 # conversion: 'mathematically agile' -> 'mathematical', 'creativity skills' -> creative
 
 list_personality_traits_2 = ['rational', 'artisan', 'guardian', 'idealist']
