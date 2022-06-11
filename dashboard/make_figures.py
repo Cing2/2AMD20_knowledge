@@ -17,3 +17,26 @@ def add_colors_figure(fig):
         font_color=colors['text']
     )
     return fig
+
+
+def fig_live_ranking(df_ranking):
+    """Function to create and return the summary statistics table for all groups."""
+    df_ranking = df_ranking.drop_duplicates().sort_values(by=['relative_occurrence_job'], ascending=False)
+
+    values = np.expand_dims(df_ranking.index, axis=0).tolist() + np.expand_dims(
+        [round(val, 3) for val in df_ranking.values.flatten()], axis=0).tolist()
+
+    fig = go.Figure(data=[go.Table(
+        header=dict(values=['Skill', 'Relative Occurrence'],
+                    fill_color='paleturquoise',
+                    font_color='black',
+                    align='left'),
+        cells=dict(values=values,
+                   fill_color='lavender',
+                   font_color='black',
+                   align='left'))
+    ])
+
+    fig = add_colors_figure(fig)
+
+    return fig

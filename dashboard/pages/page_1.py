@@ -1,13 +1,12 @@
+import pandas as pd
 from dash import html, dash_table, dcc
 from dash.dependencies import Input, Output
-from dashboard.default_values import *
-from dashboard.data import *
+from dashboard.default_values import filter_skills
+from dashboard.data import df_occurrence
 from dashboard.app import *
-from dashboard.make_figures import *
+from dashboard.make_figures import fig_live_ranking, colors
 
-
-filter_skills = [f'S{i}' for i in range(1, 11)]
-
+fig_ranking = fig_live_ranking(df_occurrence.head())
 
 layout = html.Div(style={'backgroundColor': colors['background']}, children=[
     html.Div(children=[
@@ -22,34 +21,46 @@ layout = html.Div(style={'backgroundColor': colors['background']}, children=[
                     style={'height': '20%', 'textAlign': 'center', 'color': colors['header'],
                            'backgroundColor': colors['color2'], 'padding': '10px 0'}),
         ]),
-
-        html.Div(style={'width': '50%', 'display': 'inline-block'}, children=[
-            dcc.Dropdown(filter_skills, filter_skills[0], id='dropdown_scatter_s1',
-                         style={'backgroundColor': colors['background'], 'color': 'white'}),
-        ]),
-
-        html.Div(style={'width': '50%', 'display': 'inline-block'}, children=[
-            html.P(id='my-output_s1'),
-            html.P(id='my-output_s2'),
-            html.P(id='my-output_s3'),
-            html.P(id='my-output_s4'),
-            html.P(id='my-output_s5'),
-        ]),
     ]),
-])
+
+    html.Div(children=[
+        html.Div(style={'width': '50%', 'display': 'inline-block'}, children=[
+            dash_table.DataTable(
+                id='table_filter',
+                data=[{'Skill': feat} for feat in filter_skills if feat not in df_occurrence.head().index.tolist()],
+                row_selectable='multi',
+                style_cell={'textAlign': 'left',
+                            'backgroundColor': colors['background'],
+                            'color': colors['text']},
+                style_header={
+                    'backgroundColor': colors['color2'],
+                    'fontWeight': 'bold',
+                    'color': colors['text']
+                    },
+                ),
+            ]),
+
+        html.Div(style={'width': '50%', 'display': 'inline-block'}, children=[
+            dcc.Graph(
+                id='ranking',  # style={'height': '60%'},
+                figure=fig_ranking
+            ),
+            ]),
+        ]),
+    ])
 
 
 # TODO: Use API to also search for synonyms
 
 @app.callback(
-    Output(component_id='my-output_s1', component_property='children'),
-    Output(component_id='my-output_s2', component_property='children'),
-    Output(component_id='my-output_s3', component_property='children'),
-    Output(component_id='my-output_s4', component_property='children'),
-    Output(component_id='my-output_s5', component_property='children'),
-    Input(component_id='dropdown_scatter_s1', component_property='value')
+    Output(component_id='ranking', component_property='figure'),
+    Input(component_id='table_filter', component_property='selected_rows'),
 )
-def update_output_p1(input_value):
-    # Do some dataset operations to return top 5 skills
-    returns = [f'Output: {input_value}_{i}' for i in range(1, 6)]
-    return returns[0], returns[1], returns[2], returns[3], returns[4]
+def update_output_p1(selected_idxs):
+    # Do some dataset operations to return top 5 skills and include selected skill(s)
+    df_rank = df_occurrence.head()
+    if selected_idxs is not None:
+        selected_values = [filter_skills[selected_idx] for selected_idx in selected_idxs]
+        df_rank = pd.concat([df_rank, df_occurrence.loc[selected_values, :]])
+    fig_rank = fig_live_ranking(df_rank)
+    return fig_rank
