@@ -1,0 +1,63 @@
+\begin{table}
+\centering
+\caption{Occurrence traits job description}
+\label{tab:alltraits_occurence}
+\begin{tabular}{llrr}
+\toprule
+{} &                                    Trait &  total &  relative\_occurrence\_job \\
+\midrule
+0  &                         machine learning &  23353 &                   1.6790 \\
+1  &                                technical &  17011 &                   1.2230 \\
+2  &                               management &  14205 &                   1.0213 \\
+3  &                               statistics &  12695 &                   0.9127 \\
+4  &                               analytical &  11606 &                   0.8344 \\
+5  &                            communication &   9059 &                   0.6513 \\
+6  &                              programming &   8260 &                   0.5939 \\
+7  &                     communication skills &   4810 &                   0.3458 \\
+8  &                       data visualization &   3981 &                   0.2862 \\
+9  &                            deep learning &   3850 &                   0.2768 \\
+10 &                                 rational &   3495 &                   0.2513 \\
+11 &                             mathematical &   2857 &                   0.2054 \\
+12 &                                 creative &   2761 &                   0.1985 \\
+13 &                      predictive modeling &   2569 &                   0.1847 \\
+14 &                            collaboration &   2347 &                   0.1687 \\
+15 &                                    agile &   2312 &                   0.1662 \\
+16 &                                   coding &   1864 &                   0.1340 \\
+17 &                                  logical &   1750 &                   0.1258 \\
+18 &                          problem-solving &   1451 &                   0.1043 \\
+19 &                                curiosity &   1028 &                   0.0739 \\
+20 &                               creativity &   1014 &                   0.0729 \\
+21 &                      presentation skills &    855 &                   0.0615 \\
+22 &                     strong communication &    811 &                   0.0583 \\
+23 &                                mentoring &    782 &                   0.0562 \\
+24 &                              team player &    708 &                   0.0509 \\
+25 &                          risk management &    679 &                   0.0488 \\
+26 &                        critical thinking &    667 &                   0.0480 \\
+27 &  verbal and written communication skills &    631 &                   0.0454 \\
+28 &                          business acumen &    549 &                   0.0395 \\
+29 &                           data wrangling &    403 &                   0.0290 \\
+30 &                          time management &    388 &                   0.0279 \\
+31 &                                 calculus &    259 &                   0.0186 \\
+32 &                           linear algebra &    257 &                   0.0185 \\
+33 &                         data preparation &    248 &                   0.0178 \\
+34 &                             storytelling &    222 &                   0.0160 \\
+35 &                       business knowledge &    183 &                   0.0132 \\
+36 &                               work ethic &    166 &                   0.0119 \\
+37 &                                intuition &    150 &                   0.0108 \\
+38 &                                pragmatic &    145 &                   0.0104 \\
+39 &                         model deployment &    131 &                   0.0094 \\
+40 &                                  artisan &    116 &                   0.0083 \\
+41 &                             adaptability &    112 &                   0.0081 \\
+42 &                              cooperation &     83 &                   0.0060 \\
+43 &                          software skills &     43 &                   0.0031 \\
+44 &                         model production &     13 &                   0.0009 \\
+45 &                                skeptical &     10 &                   0.0007 \\
+46 &                    product understanding &      8 &                   0.0006 \\
+47 &                                 guardian &      5 &                   0.0004 \\
+48 &                              risk-averse &      3 &                   0.0002 \\
+49 &                       operational skills &      3 &                   0.0002 \\
+50 &                                 idealist &      2 &                   0.0001 \\
+51 &                            business savy &      0 &                   0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}
