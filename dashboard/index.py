@@ -44,7 +44,7 @@ tabbed_layout = html.Div(style={'backgroundColor': colors['background'],
             }),
     dcc.Tabs(id="page_tabs", value='page1', children=[
         dcc.Tab(label='Skills Ranking', value='page1', style=tab_style, selected_style=tab_selected_style),
-        dcc.Tab(label='Knowledge Graphs', value='page2', style=tab_style, selected_style=tab_selected_style),
+        dcc.Tab(label='Knowledge Graph', value='page2', style=tab_style, selected_style=tab_selected_style),
     ],
              style={'height': '44px'}),
     html.Div(id='page_content')
