@@ -81,7 +81,7 @@ def knowledge_graph(min_nr_links: int = 500):
 
         edge_trace = go.Scatter(
             x=edge_x, y=edge_y,
-            line=dict(color='black', width=1),
+            line=dict(color='rgba(200,200,200,200)', width=1),
             hoverinfo='none',
             showlegend=False,
             mode='lines')
@@ -101,7 +101,7 @@ def knowledge_graph(min_nr_links: int = 500):
             mode='markers+text',
             showlegend=False,
             hoverinfo='none',
-            textfont=dict(color='black', size=15),
+            textfont=dict(color='black', size=14),
             marker=dict(
                 color='lightblue',
                 size=40,

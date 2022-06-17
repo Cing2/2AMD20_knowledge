@@ -87,5 +87,6 @@ def update_output_p1(selected_idxs, input_text):
                                   columns=['relative_occurrence_job', 'total'])
             print(df_new)
         df_rank = pd.concat([df_rank, df_new])
+
     fig_rank = fig_live_ranking(df_rank)
     return fig_rank

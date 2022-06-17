@@ -4,6 +4,4 @@ import dash
 # for explanation structure
 
 ### Dash instance ###
-app = dash.Dash(
-        __name__
-        )
+app = dash.Dash(__name__)
