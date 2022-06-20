@@ -4,7 +4,7 @@ import pandas as pd
 from dash import html, dash_table, dcc
 from dash.dependencies import Input, Output
 from dashboard.default_values import filter_skills
-from dashboard.data import df_occurrence
+from dashboard.data import df_occurrence, get_word_count_jobs
 from dashboard.app import *
 from dashboard.make_figures import fig_live_ranking, colors
 
@@ -78,14 +78,13 @@ def update_output_p1(selected_idxs, input_text):
 
     if input_text is not None:
         try:
-            print(df_occurrence.loc[input_text, :].values)
+            # print(df_occurrence.loc[input_text, :].values)
             df_new = pd.DataFrame([df_occurrence.loc[input_text, :].values.tolist()], index=[input_text],
                                   columns=['relative_occurrence_job', 'total'])
-            print(df_new)
         except:
-            df_new = pd.DataFrame([[-math.inf, -math.inf]], index=[input_text],
+            values = get_word_count_jobs(input_text)
+            df_new = pd.DataFrame([[values[1], values[0]]], index=[input_text],
                                   columns=['relative_occurrence_job', 'total'])
-            print(df_new)
         df_rank = pd.concat([df_rank, df_new])
 
     fig_rank = fig_live_ranking(df_rank)

@@ -6,7 +6,7 @@ import matplotlib
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-from dashboard.data import *
+# from dashboard.data import get_word_count_jobs
 from article_terms import all_traits_skills
 from dashboard.default_values import *
 
